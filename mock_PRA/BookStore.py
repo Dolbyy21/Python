@@ -1,3 +1,4 @@
+#BookStore
 class Book:
     def __init___(self, pages, price, author, id1, title):
         self.pages = pages
