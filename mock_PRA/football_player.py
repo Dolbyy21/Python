@@ -10,13 +10,22 @@ class FootballLeague:
         self.ln = league_name
         self.pl = player_list   
     def findmax(self):
-        return max(self.pl,key = lambda x:x.r) if len(self.pl)!=0 else None
-<<<<<<< HEAD
-=======
-        
->>>>>>> f3a54417616af4fdd038d82e5e4245f1385f749e
+        if len(self.pl) == 0:
+            return None
+        maxm = -1
+        obj = None
+        for i in self.pl:
+            if i.r > maxm:
+                maxm = i.r
+                obj = i
+        return obj 
     def sortbygoals(self):
-        return sorted(self.pl , key = lambda x:x.g) if len(self.pl) !=0 else None
+        l = []
+        for i in self.pl:
+            l.append(i.g)
+        if len(self.pl) == 0:
+            return None
+        return sorted(l)
             
 n = int(input())
 l = [] 
