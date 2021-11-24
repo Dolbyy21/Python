@@ -50,32 +50,4 @@ if y == None:
 else:
     for i in y:
         print(i.g)
-        
-        
-        """
-        
-        70
-88
-9
-Cristiano Ronaldo
-24
-31
-62
-87
-88
-        
-        70
-88
-9
-Cristiano Ronaldo
-24
-31
-62
-87
-88
-        
-<<<<<<< HEAD
-        """
-=======
-        
->>>>>>> f3a54417616af4fdd038d82e5e4245f1385f749e
+
