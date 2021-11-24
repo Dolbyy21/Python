@@ -11,6 +11,10 @@ class FootballLeague:
         self.pl = player_list   
     def findmax(self):
         return max(self.pl,key = lambda x:x.r) if len(self.pl)!=0 else None
+<<<<<<< HEAD
+=======
+        
+>>>>>>> f3a54417616af4fdd038d82e5e4245f1385f749e
     def sortbygoals(self):
         return sorted(self.pl , key = lambda x:x.g) if len(self.pl) !=0 else None
             
@@ -61,4 +65,8 @@ Cristiano Ronaldo
 87
 88
         
+<<<<<<< HEAD
         """
+=======
+        
+>>>>>>> f3a54417616af4fdd038d82e5e4245f1385f749e
