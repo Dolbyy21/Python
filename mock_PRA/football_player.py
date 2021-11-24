@@ -11,7 +11,7 @@ class FootballLeague:
         self.pl = player_list
         
     def findmax(self):
-        return max(self.pl,key = lambda x:x.g) if len(self.pl)!=0 else None
+        return max(self.pl,key = lambda x:x.r) if len(self.pl)!=0 else None
         
     def sortbygoals(self):
         l = []
