@@ -8,16 +8,11 @@ class Player:
 class FootballLeague:
     def __init__(self,league_name, player_list):
         self.ln = league_name
-        self.pl = player_list
-        
+        self.pl = player_list   
     def findmax(self):
-        return max(self.pl,key = lambda x:x.g) if len(self.pl)!=0 else None
-        
+        return max(self.pl,key = lambda x:x.r) if len(self.pl)!=0 else None
     def sortbygoals(self):
-        l = []
-        for i in self.pl:
-            l.append(i.g)
-        return sorted(l)
+        return sorted(self.pl , key = lambda x:x.g) if len(self.pl) !=0 else None
             
 n = int(input())
 l = [] 
@@ -41,6 +36,29 @@ if y == None:
     print("No Data Found")
 else:
     for i in y:
-        print(i)
+        print(i.g)
         
         
+        """
+        
+        70
+88
+9
+Cristiano Ronaldo
+24
+31
+62
+87
+88
+        
+        70
+88
+9
+Cristiano Ronaldo
+24
+31
+62
+87
+88
+        
+        """
